@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e90ff, #87cefa);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 900px;
+    max-width: 90%;
+}
+
+.illustration {
+    position: relative; /* Tambahkan relative untuk posisi logo */
+    background: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.illustration .logo {
+    position: absolute; /* Logo berada di atas gambar */
+    top: 140px; /* Sesuaikan jarak dari atas */
+    left: 20px; /* Sesuaikan jarak dari kiri */
+    width: 100px; /* Ukuran logo */
+    height: auto;
+    z-index: 2; /* Pastikan logo di atas gambar */
+}
+
+.login-container {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 95%;
+    padding: 10px;
+    background: #1e90ff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background: #0056b3;
+}
+
+.register {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register a {
+    color: #1e90ff;
+    text-decoration: none;
+}
